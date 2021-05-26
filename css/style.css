@@ -1,0 +1,249 @@
+/* ===========================================================
+Template Name: MISSION || HTML Responsive Template;
+Authore: Md.Sobuj Sarkar;
+Version: 1.0.0;
+Created: 25  MAY 2021;
+File Description: Main CSS file of the template;
+============================================================== */
+
+/* ===========================================================
+              Variables
+============================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+:root{
+    --primary:#ff5722;
+    --secondary:#1c1c1c;
+    --text:#909090;
+    --acent:#ff5722;
+    --white:#ffffff;
+    --primary_fonts: 'Raleway', sans-serif;
+    --secondary_fonts: 'Open Sans', sans-serif;
+    --title_font_size:36px;
+    --subtitle_font_size:22px;
+    --text_font_size:14px;
+    --Anchor_font_size:14px;
+}
+body{
+    font-family: var(--secondary_fonts);
+    font-size: var(--text_font_size)!important;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+h1,
+h2,h3,
+h4,h5,h6{
+    font-family: var(--primary_fonts);
+    color: var(--secondary);
+}
+h1{
+    font-family: var(--primary_fonts);
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+h2{
+    font-size: var(--title_font_size);
+    color: var(--secondary);
+    line-height: 46px;
+    font-weight: 700;
+}
+h4{ 
+    color: var(--primary);
+    font-size: var(--subtitle_font_size);
+    line-height: 32px;
+    font-weight: 700;
+}
+p{
+    font-family: var(--secondary);
+    font-size: var(--text_font_size);
+    color: var(--text);
+    line-height: 30px;
+    font-weight: 400;
+}
+a{
+    font-family: var(--primary_fonts);
+    font-size: var(--Anchor_font_size);
+    color: var(--text);
+    line-height: 25px;
+    font-weight: 400;  
+}
+a:hover{
+    color: var(--acent);
+}
+button:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+/* ===========================================================
+                  Header Style Start Here
+============================================================== */
+
+.navbar{
+    padding: 0px;
+    border-bottom: 2px solid #363636;
+    height: 85px;
+    z-index: 1;
+}
+.nav-link{
+    font-size: var(--Anchor_font_size);
+    text-transform: uppercase;
+    color: var(--white)!important;
+    padding: 30px 20px !important;
+}
+.nav-link:hover{
+    color: var(--acent)!important;
+}
+.nav-item{
+    position: relative;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0 ;
+    background-color: var(--acent);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+     transition: .3s;
+}
+.nav-link:Hover::before{
+    width: 80%;
+}
+/* ===========================================================
+                  Carousel Banner Start Here
+============================================================== */
+#slider{
+    margin-top: -100px;
+}
+.carousel-caption{
+    width: 80%;
+    bottom: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+    -moz-transform: translate(-50%, 50%);
+}
+.slider-button a{
+    font-family: var(--primary_fonts);
+    font-size: var(--text_font_size);
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 50px;
+    width: 180px;
+    line-height: 50px;
+    color: var(--white);
+    background-color: var(--acent);
+    display: block;
+    border: 2px solid var(--acent);
+}
+.slider-button li:last-child a{
+    border: 2px solid var(--white);
+    background-color: transparent;
+}
+.slider-button li:last-child a:hover{
+    border-color: var(--acent);
+    background-color: var(--acent);
+}
+/* ===========================================================
+                 About Us Start Here
+============================================================== */
+#about-us{
+    padding: 100px 0px;
+}
+.heading h2{
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+}
+.heading p{
+   padding: 15px 80px;
+}
+.heading h2::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    height: 2px;
+    width: 50px;
+    background-color: var(--acent);
+}
+.about-content{
+    margin-top: 40px;
+}
+.about-content h4{
+    font-family: var(--primary_fonts);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+/* ===========================================================
+                 About Us Start Here
+============================================================== */
+
+/* ===========================================================
+                 Counter up Start Here
+============================================================== */
+#counter{
+    padding: 100px 0px;
+    background-image: url(../images/counter-up-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  top center;
+    position: relative;
+    z-index: 1;
+}
+.overlay::before{
+    content: "";
+    position: absolute;
+    opacity: .8;
+    height:100%;
+    width: 100%;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.counter-item i{
+    color:var(--primary);
+    font-size: 30px;
+  
+}
+.counter-item h6{
+    font-family: var(--secondary_fonts);
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    color: var(--white);
+    padding: 12px 0px;
+    position: relative;
+
+}
+.counter-item h6::before{
+    content: "";
+    position: absolute;
+    background-color: var(--acent);
+    height: 2px;
+    width: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+.counter-item .count-item{
+    font-family: var(--secondary_fonts);
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--white);
+}
+
